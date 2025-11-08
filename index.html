@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="app" hidden>
+    <div class="app">
       <header class="app__header">
         <div class="app__header-left">
           <h1 class="app__title">Case ID 23Be3 - Problem reported</h1>
@@ -49,10 +49,6 @@
               <p class="subtle">Click to link items. Confidence shown by bar.</p>
             </div>
             <div class="suggestions__header-actions">
-              <div class="version-switch" role="group" aria-label="Version switch">
-                <button id="versionV1Btn" class="btn btn--small btn--ghost" aria-pressed="true">v1</button>
-                <button id="versionV2Btn" class="btn btn--small btn--ghost" aria-pressed="false">v2</button>
-              </div>
               <button id="acceptAllBtn" class="btn btn--small btn--primary" disabled>Accept >80%</button>
               <button id="dismissAllBtn" class="btn btn--small btn--ghost" disabled>Dismiss</button>
             </div>
@@ -69,20 +65,6 @@
       </footer>
     </div>
 
-    <script src="app.js" defer></script>
-  
-    <div id="authGate" class="auth">
-      <div class="auth__panel">
-        <div class="auth__logo">Ark AI</div>
-        <div class="auth__title">Enter password</div>
-        <div class="auth__controls">
-          <input id="authPassword" type="password" class="input" placeholder="Password" autofocus>
-          <button id="authSubmit" class="btn btn--primary btn--small">Unlock</button>
-        </div>
-
-        <div id="authError" class="auth__error" aria-live="polite" hidden>Incorrect password</div>
-      </div>
-    </div>
-
+    <script src="app.js"></script>
   </body>
 </html>
